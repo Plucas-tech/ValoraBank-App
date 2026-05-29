@@ -6,7 +6,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../Services/firebaseConfig';
 
-export default function Login() {
+export default function Login({ navigation }) {
 
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
